@@ -89,7 +89,7 @@ if __name__ == '__main__':
 		# E[k+1], S[k+1], ES[k+1], P[k+1] = get_euler_updated(t, dt, E[k], S[k], ES[k], P[k])
 		E[k+1], S[k+1], ES[k+1], P[k+1] = get_rungekutta_updated(t, dt, E[k], S[k], ES[k], P[k])
 
-	# plot for 8-2
+	# plot for 8.2
 	plt.plot(time, E, label='$E$')
 	plt.plot(time, S, label='$S$')
 	plt.plot(time, ES, label='$ES$')
@@ -104,7 +104,7 @@ if __name__ == '__main__':
 	plt.title('concentration of $E$, $S$, $ES$ and $P$ according to time $t$')
 	plt.show()
 
-	# plot for 8-3
+	# plot for 8.3
 	plt.plot(S, V, label='velocity of S')
 	plt.axhline(y=V.max(), ls=':')
 	plt.plot(S[V.argmax()], V.max(), marker='.', markersize=20, zorder=-1, color='#FB2')
